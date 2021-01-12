@@ -37,5 +37,7 @@ jobs:
         run: |
             chmod +x mvnw
             ./mvnw spring-boot:build-image
+      - name: tag image
+        run: docker image tag catalog-service:0.0.1-SNAPSHOT ashitikov7/catalog-service:0.0.1-SNAPSHOT
       - name: Push to Docker Hub
         run: docker push ashitikov7/catalog-service:0.0.1-SNAPSHOT
