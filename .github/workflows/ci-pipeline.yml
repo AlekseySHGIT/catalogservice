@@ -15,5 +15,5 @@ jobs:
           architecture: x64
       - name: Gradle Build (assemble + test)
         run: |
-          chmod +x gradlew
-          ./gradlew build
+          chmod +x mvnw
+          ./mvnw package
