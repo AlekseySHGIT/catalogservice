@@ -13,7 +13,7 @@ jobs:
           java-version: 11.0.7
           java-package: jdk
           architecture: x64
-      - name: Gradle Build (assemble + test)
-        run: |
+      - name: maven build
+        run:
           chmod +x mvnw
           ./mvnw package
